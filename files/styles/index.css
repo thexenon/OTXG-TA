@@ -1,0 +1,72 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Branding */
+.brand {
+    min-height: 80ch;
+    background: url(../img/b1.png);
+    background-position: center;
+    background-size: cover;
+    backface-visibility: inherit;
+    background-repeat: no-repeat;
+}
+
+.brand-img {
+    min-height: 70ch;
+    text-align: center;
+}
+
+.brand-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.brand-text .span { 
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: blue;
+    padding: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+}
+
+.brand-text .link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px 50px;
+    margin: 15px;
+    border: 2px solid;
+}
+/* Branding */
+
+/* Header */
+.header {
+    background: rgb(137, 43, 226);
+    position: sticky;
+    top: 0px;
+}
+.header .logo {
+    padding: 10px;
+}
+.header img {
+    height: 70px;
+    width: 70px;
+}
+.header span {
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+/* Header */
+/* Form */
+#forms {
+    min-height: 100ch;
+}
+/* Form */

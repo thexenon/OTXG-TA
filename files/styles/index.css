@@ -4,6 +4,27 @@
     padding: 0;
 }
 
+.strong {
+    color: blue;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.red {
+    color: red;
+}
+
+.clear {
+    clear: both;
+}
+
+
 /* Branding */
 .brand {
     min-height: 80ch;
@@ -66,7 +87,77 @@
 }
 /* Header */
 /* Form */
-#forms {
-    min-height: 100ch;
+#registrations {
+    text-align: center;
+    padding: 15px;
+}
+.register {
+    padding: 10px;
+    background: rgb(226, 211, 211);
+    text-align: center;
+    border-radius: 50px;
+}
+
+.register h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+.formsdiv p {
+    font-size: 16px;
+}
+
+.forms span {
+    text-align: left;
+    font-size: 10px;
+}
+.forms label {
+    font-size: 15px;
+}
+
+.forms input[type=text] {
+    padding: 3px 8px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.forms .float {
+    text-align: left;
+    float: left;
+    padding: 0px 25px;
+}
+
+.forms textarea {
+    padding: 5px 8px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.forms input:focus {
+    border: aqua solid;
+}
+
+.forms textarea:focus {
+    border: aqua solid;
+}
+
+.saveform {
+    margin: 20px;
+    background: aqua;
+    padding: 8px 18px;
+    border: none;
+    cursor: grab;
+    border-radius: 10px;
+}
+.reset {
+    margin: 20px;
+    background: rgb(255, 106, 0);
+    padding: 8px 18px;
+    border: none;
+    cursor: grab;
+    border-radius: 10px;
 }
 /* Form */

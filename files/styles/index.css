@@ -110,7 +110,7 @@
 
 .forms span {
     text-align: left;
-    font-size: 10px;
+    font-size: 11px;
 }
 .forms label {
     font-size: 15px;
@@ -121,6 +121,10 @@
     background: white;
     border: none;
     border-radius: 10px;
+}
+
+.forms input[type=radio], .forms input[type=checkbox] {
+    margin: 0px 10px;
 }
 
 .forms .float {
@@ -147,7 +151,7 @@
 .saveform {
     margin: 20px;
     background: aqua;
-    padding: 8px 18px;
+    padding: 15px 25px;
     border: none;
     cursor: grab;
     border-radius: 10px;
@@ -155,7 +159,7 @@
 .reset {
     margin: 20px;
     background: rgb(255, 106, 0);
-    padding: 8px 18px;
+    padding: 15px 25px;
     border: none;
     cursor: grab;
     border-radius: 10px;

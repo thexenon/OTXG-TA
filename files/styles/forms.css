@@ -1,0 +1,136 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background: url(../img/b1.png);
+}
+
+.strong {
+    color: blue;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.red {
+    color: red;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* Header */
+.header {
+    background: rgb(137, 43, 226);
+    position: sticky;
+    top: 0px;
+}
+.header .logo {
+    padding: 10px;
+}
+.header img {
+    height: 70px;
+    width: 70px;
+}
+.header span {
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+/* Header */
+/* Form */
+#registrations {
+    text-align: center;
+    padding: 20px 80px;
+    min-width: 60%;
+}
+.register {
+    padding: 10px;
+    background: rgb(226, 211, 211);
+    text-align: center;
+    border-radius: 50px;
+}
+
+.register h2 {
+    font-size: 33px;
+    font-weight: bolder;
+    margin: 15px;
+}
+
+.formsdiv p {
+    font-size: 19px;
+}
+
+.forms span {
+    text-align: left;
+    font-size: 14px;
+}
+.forms label {
+    font-size: 18px;
+}
+
+.forms input[type=text] {
+    padding: 5px 12px;
+    background: white;
+    min-width: 70%;
+    min-height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.forms input[type=radio], .forms input[type=checkbox] {
+    margin: 0px 10px;
+}
+
+.forms .float {
+    text-align: left;
+    float: left;
+    padding: 0px 25px;
+}
+
+.forms textarea {
+    padding: 5px 8px;
+    background: white;
+    min-width: 70%;
+    min-height: 70px;
+    border: none;
+    border-radius: 10px;
+}
+
+.forms input:focus {
+    border: aqua solid;
+}
+
+.forms textarea:focus {
+    border: aqua solid;
+}
+
+.saveform {
+    margin: 20px;
+    background: aqua;
+    padding: 15px 25px;
+    border: none;
+    cursor: grab;
+    border-radius: 10px;
+}
+.reset {
+    margin: 20px;
+    background: rgb(255, 106, 0);
+    padding: 15px 25px;
+    border: none;
+    cursor: grab;
+    border-radius: 10px;
+}
+/* Form */

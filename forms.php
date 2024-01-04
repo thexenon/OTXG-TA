@@ -7,10 +7,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $residence = htmlspecialchars($_POST['residence']);
     $career = htmlspecialchars($_POST['CareerCourse']);
-    $enterprenuer = $_POST['EntrepreneurialCourses'];
-    $enterprenuer1 = $enterprenuer[0];
-    $enterprenuer2 = $enterprenuer[1];
-    $enterprenuer3 = $enterprenuer[2];
+    $shirts = htmlspecialchars($_POST['ShirtSizes']);
+
+    if (isset($_POST['EntrepreneurialCourses'])) {
+        $enterprenuer = $_POST['EntrepreneurialCourses'];
+
+        if (count($enterprenuer) > 3) {
+            $enterprenuer1 = $enterprenuer[0];
+            $enterprenuer2 = $enterprenuer[1];
+            $enterprenuer3 = $enterprenuer[2];
+        } else if (count($enterprenuer) == 3) {
+            $enterprenuer1 = $enterprenuer[0];
+            $enterprenuer2 = $enterprenuer[1];
+            $enterprenuer3 = $enterprenuer[2];
+        } else if (count($enterprenuer) == 2) {
+            $enterprenuer1 = $enterprenuer[0];
+            $enterprenuer2 = $enterprenuer[1];
+            $enterprenuer3 = "Empty";
+        } else if (count($enterprenuer) == 1) {
+            $enterprenuer1 = $enterprenuer[0];
+            $enterprenuer2 = "Empty";
+            $enterprenuer3 = "Empty";
+        }
+    } else {
+        $enterprenuer1 = "Empty";
+        $enterprenuer2 = "Empty";
+        $enterprenuer3 = "Empty";
+    }
+
+    if (isset($_POST['agents'])) {
+        $agents = htmlspecialchars($_POST['agents']);
+    } else {
+        $agents = "Empty";
+    }
+
+    
     // $date_added = new TimeStamp();
 
     
@@ -23,7 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $career,
         $enterprenuer1,
         $enterprenuer2,
-        $enterprenuer3
+        $enterprenuer3,
+        $shirts,
+        $agents
         // $date_added
     ];
 
@@ -81,7 +114,7 @@ function send_data_to_database($dbname, $data) {
     }
 
     // Prepare the SQL statement to insert the data into the database
-    $sql = "INSERT INTO $dbname (fullname, phone, whatsapp, email, residence, career, enterprenuer1, enterprenuer2, enterprenuer3) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+    $sql = "INSERT INTO $dbname (fullname, phone, whatsapp, email, residence, career, enterprenuer1, enterprenuer2, enterprenuer3, shirts, agents) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
     $stmt = $conn->prepare($sql);
     $stmt->execute($data);
     header("Location: ./index.php");

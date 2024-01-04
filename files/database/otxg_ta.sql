@@ -38,6 +38,8 @@ CREATE TABLE `MobileAppDevelopment` (
   `enterprenuer1` varchar(255) NOT NULL,
   `enterprenuer2` varchar(255) NOT NULL,
   `enterprenuer3` varchar(255) NOT NULL,
+  `shirts` varchar(255) NOT NULL,
+  `agents` varchar(255) NOT NULL,
   `date_added` TimeStamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -58,6 +60,8 @@ CREATE TABLE `WebDevelopment` (
   `enterprenuer1` varchar(255) NOT NULL,
   `enterprenuer2` varchar(255) NOT NULL,
   `enterprenuer3` varchar(255) NOT NULL,
+  `shirts` varchar(255) NOT NULL,
+  `agents` varchar(255) NOT NULL,
   `date_added` TimeStamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -78,6 +82,8 @@ CREATE TABLE `GraphicDesign` (
   `enterprenuer1` varchar(255) NOT NULL,
   `enterprenuer2` varchar(255) NOT NULL,
   `enterprenuer3` varchar(255) NOT NULL,
+  `shirts` varchar(255) NOT NULL,
+  `agents` varchar(255) NOT NULL,
   `date_added` TimeStamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -98,6 +104,8 @@ CREATE TABLE `PythonforDataScience` (
   `enterprenuer1` varchar(255) NOT NULL,
   `enterprenuer2` varchar(255) NOT NULL,
   `enterprenuer3` varchar(255) NOT NULL,
+  `shirts` varchar(255) NOT NULL,
+  `agents` varchar(255) NOT NULL,
   `date_added` TimeStamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -118,6 +126,8 @@ CREATE TABLE `MathLab` (
   `enterprenuer1` varchar(255) NOT NULL,
   `enterprenuer2` varchar(255) NOT NULL,
   `enterprenuer3` varchar(255) NOT NULL,
+  `shirts` varchar(255) NOT NULL,
+  `agents` varchar(255) NOT NULL,
   `date_added` TimeStamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -138,6 +148,8 @@ CREATE TABLE `VideoGameDevelopment` (
   `enterprenuer1` varchar(255) NOT NULL,
   `enterprenuer2` varchar(255) NOT NULL,
   `enterprenuer3` varchar(255) NOT NULL,
+  `shirts` varchar(255) NOT NULL,
+  `agents` varchar(255) NOT NULL,
   `date_added` TimeStamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -158,6 +170,8 @@ CREATE TABLE `EthicalHacking` (
   `enterprenuer1` varchar(255) NOT NULL,
   `enterprenuer2` varchar(255) NOT NULL,
   `enterprenuer3` varchar(255) NOT NULL,
+  `shirts` varchar(255) NOT NULL,
+  `agents` varchar(255) NOT NULL,
   `date_added` TimeStamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -178,6 +192,8 @@ CREATE TABLE `AI_MachineLearning` (
   `enterprenuer1` varchar(255) NOT NULL,
   `enterprenuer2` varchar(255) NOT NULL,
   `enterprenuer3` varchar(255) NOT NULL,
+  `shirts` varchar(255) NOT NULL,
+  `agents` varchar(255) NOT NULL,
   `date_added` TimeStamp NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
